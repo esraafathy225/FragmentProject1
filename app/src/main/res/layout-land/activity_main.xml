@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.esraa.hp.fragmentpro1.MainActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:id="@+id/layout2"
+        >
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.esraa.hp.fragmentpro1.FragmentOne"
+            android:id="@+id/frag_one"
+            tools:layout="@layout/fragment_one">
+
+        </fragment>
+
+    </LinearLayout>
+    <LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    android:id="@+id/layout1"
+    >
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/frag_two"
+            android:name="com.esraa.hp.fragmentpro1.FragmentTwo"
+            tools:layout="@layout/fragment_two">
+
+        </fragment>
+
+</LinearLayout>
+
+
+</LinearLayout>
